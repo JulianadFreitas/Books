@@ -16,33 +16,15 @@ export default function Home() {
         Books Summary 
         </h1>
         <div className={styles.grid}>
+
+        
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Clean Code</h2>
             <div className={styles.bookImageContainer}><Image src= "/imgs/clean_code.jpg" width={100} height={150}></Image></div>
             <h3>Escrito por Uncle Bob</h3>
             <sub>Resumo de Rodrigo Martins</sub>
           </a>
-
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Clean Architecture</h2>
-            <Image src= "/imgs/archtecture.jpeg" width={100} height={150}></Image>
-            <h3>Escrito por Uncle Bob</h3>
-            <sub>Resumo de Rodrigo Martins</sub>
-          </a>
-
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Design Patterns </h2>
-            <Image src= "/imgs/patterns.jpg" width={100} height={150}></Image>
-            <h3>Escrito por Uncle Bob</h3>
-            <sub>Resumo de Rodrigo Martins</sub>
-          </a>
-
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Grokking Algo</h2>
-            <Image src= "/imgs/groking.jpg" width={100} height={150}></Image>
-            <h3>Escrito por Uncle Bob</h3>
-            <sub>Resumo de Rodrigo Martins</sub>
-          </a>
+          
         </div>
       </main>
     </div>

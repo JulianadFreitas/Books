@@ -1,0 +1,32 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Clean Code",
+      "image": "/imgs/clean_code.jpg",
+      "author": "Uncle Bob",
+      "summaryAuthor": "Rodrigo"
+    },
+    {
+      "id": "2",
+      "title": "Clean Architecture",
+      "image": "/imgs/archtecture.jpg",
+      "author": "Uncle Bob",
+      "summaryAuthor": "Rodrigo"
+    },
+    {
+      "id": "3",
+      "title": "Design Patterns",
+      "image": "/imgs/patterns.jpg",
+      "author": "Uncle Bob",
+      "summaryAuthor": "Rodrigo"
+    },
+    {
+      "id": "4",
+      "title": "Grokking Algo",
+      "image": "/imgs/grokking.jpg",
+      "author": "Uncle Bob",
+      "summaryAuthor": "Rodrigo"
+    }
+  ]
+}
