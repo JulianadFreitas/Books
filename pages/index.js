@@ -23,33 +23,31 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Clean Code &rarr;</h2>
+            <h2>Clean Code</h2>
             <Image src= "/imgs/clean_code.jpg" width={100} height={150}></Image>
             <h3>Escrito por Uncle Bob</h3>
             <sub>Resumo de Rodrigo Martins</sub>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Head First &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="https://nextjs.org/docs" className={styles.card}>
+            <h2>Clean Archtecture</h2>
+            <Image src= "/imgs/archtecture.jpeg" width={100} height={150}></Image>
+            <h3>Escrito por Uncle Bob</h3>
+            <sub>Resumo de Rodrigo Martins</sub>
           </a>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Clean Architecture &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="https://nextjs.org/docs" className={styles.card}>
+            <h2>Design Patterns </h2>
+            <Image src= "/imgs/patterns.jpg" width={100} height={150}></Image>
+            <h3>Escrito por Uncle Bob</h3>
+            <sub>Resumo de Rodrigo Martins</sub>
           </a>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Algoritmos &rarr;</h2>
-            <p>
-              [Resumo]]
-            </p>
+          <a href="https://nextjs.org/docs" className={styles.card}>
+            <h2>Grokking Algo</h2>
+            <Image src= "/imgs/groking.jpg" width={100} height={150}></Image>
+            <h3>Escrito por Uncle Bob</h3>
+            <sub>Resumo de Rodrigo Martins</sub>
           </a>
         </div>
       </main>
