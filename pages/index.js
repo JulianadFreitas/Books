@@ -1,8 +1,28 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import React, { useRef, useEffect, useState } from 'react';
+import axios from 'axios';
+import Card from '../components/card';
+
 
 export default function Home() {
+  const [books, setBooks] = useState([]);
+  const shouldGetBooks = useRef(true)
+
+  useEffect(() => {
+    if (shouldGetBooks.current) {
+      shouldGetBooks.current = false
+
+    axios.get('http://localhost:3000/api/books').then(response => {
+      console.log(response.data);
+      setBooks(response.data);
+    })
+  }
+    
+  }, []);
+
+
   return (
     <div className={styles.container}>
       <Head>
@@ -16,15 +36,9 @@ export default function Home() {
         Books Summary 
         </h1>
         <div className={styles.grid}>
-
-        
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Clean Code</h2>
-            <div className={styles.bookImageContainer}><Image src= "/imgs/clean_code.jpg" width={100} height={150}></Image></div>
-            <h3>Escrito por Uncle Bob</h3>
-            <sub>Resumo de Rodrigo Martins</sub>
-          </a>
-          
+          {books.map((book, i)=> 
+            <Card book ={book} key={i}/>
+          )}
         </div>
       </main>
     </div>
