@@ -17,7 +17,7 @@ $ npm install
 Run the json server
 
 ```bash
-$ npm run start:server:dev
+$ npm run server
 ```
 
 Then, run the development server
