@@ -17,3 +17,5 @@ export default async function handler(req, res) {
     return res.status(BAD_REQUEST).json({ message: 'Something went wrong! :C' })
   }
 } 
+
+
