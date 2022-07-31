@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from '../styles/components/Card.module.css'
 
-export default function Card({book}) {
+function Card({book}) {
 
 return(
     <a href={`http://localhost:3000/books/${book.id}`} className={styles.card}>
@@ -12,3 +12,5 @@ return(
     </a>
   )
 }
+
+export {Card}

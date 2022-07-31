@@ -4,9 +4,10 @@ import Head from 'next/head';
 import { useRouter } from 'next/router'
 import { useEffect, useState  }from 'react';
 import styles from'../../styles/Home.module.css'
+import {BookInfo} from '../../components';
 
-function books(books) {
-  const [book, setBook] = useState({});
+function books() {
+  const [book, setBook] = useState(null);
   const router = useRouter()
   const { id } = router.query
 
@@ -22,7 +23,7 @@ function books(books) {
 
   }, [id]);
    
-  return ( 
+  return !!book && ( 
     <div className={styles.container}>
       <Head>
         <title>{book.title} - Summary</title>
@@ -34,8 +35,10 @@ function books(books) {
         <h1 className={styles.title}>
         {book.title} 
         </h1>
-        <div className={styles.grid}>
+        <div style={{ maxWidth: 900, width: '100%',textAlign: 'justify', whiteSpace: 'break-spaces', lineHeight: '1.8em'}}>
+          <p>{book.summary}</p>
         </div>
+        <BookInfo book={book}/>
       </main>
     </div>);
 }

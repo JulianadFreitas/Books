@@ -1,7 +1,7 @@
 import axios from 'axios'
 import Head from 'next/head'
 import { useEffect, useRef, useState } from 'react'
-import Card from '../components/card'
+import {Card} from '../components'
 import styles from '../styles/Home.module.css'
 
 export default function Home () {
