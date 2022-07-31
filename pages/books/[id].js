@@ -6,7 +6,7 @@ import { useEffect, useState  }from 'react';
 import styles from'../../styles/Home.module.css'
 import {BookInfo} from '../../components';
 
-function books() {
+function Books() {
   const [book, setBook] = useState(null);
   const router = useRouter()
   const { id } = router.query
@@ -43,4 +43,4 @@ function books() {
     </div>);
 }
 
-export default books;
+export default Books;

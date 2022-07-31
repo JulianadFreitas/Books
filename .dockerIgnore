@@ -1,0 +1,14 @@
+#just the files of configuration will be in image
+
+# dependencies
+/node_modules
+/components
+/pages
+/public
+/styles
+.eslintrc.json
+.gitignore
+books.json
+README.md
+
+

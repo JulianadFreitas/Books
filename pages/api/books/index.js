@@ -2,7 +2,7 @@
 import axios from "axios"
 import { OK, NOT_FOUND, BAD_REQUEST } from "http-status"
 
-const booksBaseApiUrl = `http://localhost:3001` 
+const booksBaseApiUrl = `http://0100-2804-14d-5e82-875f-f415-b228-fcf6-356e.sa.ngrok.io` 
 
 export default async function handler(req, res) {
   try {
@@ -10,6 +10,7 @@ export default async function handler(req, res) {
 
     return res.status(OK).json(bookResponse.data)
   } catch (error) {
+    console.log(error.message)
     if (error.response?.status === NOT_FOUND) {
       return res.status(NOT_FOUND).json()
     }
