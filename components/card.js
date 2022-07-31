@@ -1,6 +1,5 @@
-
-import styles from '../styles/components/Card.module.css'
 import Image from 'next/image'
+import styles from '../styles/components/Card.module.css'
 
 export default function Card({book}) {
 
@@ -11,5 +10,5 @@ return(
         <h3>Escrito por {book.author}</h3>
         <sub>Resumo de {book.summaryAuthor}</sub>
     </a>
-          
-)}
+  )
+}
